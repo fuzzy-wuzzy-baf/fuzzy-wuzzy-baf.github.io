@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(14, 14, 14);
+}
+
+.block {
+    margin-top: 8%;
+}
+
+.text3d-wrap-3 {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+    height: 260px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.text3d-3 {
+    margin-top: -12px;
+    align-self: center;
+    transform: perspective(300px) rotateX(15deg) scaleY(0.8);
+    transition: all 0.5s;
+    font-family: Impact, Charcoal, sans-serif;
+    font-size: 140px;
+    letter-spacing: 3px;
+    color: #FFF;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.9), 0 10px 0 #BFE2FF;
+}
+.text3d-wrap-3:hover .text3d-3 {
+    transform: perspective(1000px) rotateX(15deg) scale(1.07);
+    text-shadow: 0 0 10px black, 0 2px 0 #BFE2FF;
+}
+@media (max-width:767px) {
+    .text3d-3 {
+        font-size: 60px;
+    }
+}
+
+.text {
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 26pt;
+    margin-bottom: 3%;
+    text-shadow: 1px 1px 1px white;
+}
+
+.contact {
+    max-width: 200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+i {
+    font-size: 28pt;
+    color: white;
+}
