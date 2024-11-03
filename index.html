@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Tracker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <main>
+        <section class="main-section">
+            <p class="info"></p>
+            <div class="timer">
+                <p class="time"></p>
+                <div class="button-group">
+                    <button class="start-time"><i class="fa-solid fa-play"></i>START</button>
+                    <button class="restart" title="Заново"><i class="fa-solid fa-rotate"></i></button>
+                    <button  class="skip" title="Пропустить"><i class="fa-solid fa-forward"></i></button>
+                </div>
+            </div>
+        </section>
+        <section class="todo-pomodoro">
+            <div class="container">
+                <h2 class="title">Задачи</h2>
+                <form class="todo-form">
+                    <input type="text" placeholder="Новая задача" class="input-task">
+                    <button class="new-task" title="Добавить"><i class="fa-solid fa-plus"></i></button>
+                </form>
+                <ul class="tasks">
+                    
+                </ul>
+            </div>
+        </section>
+    </main>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/todo.js"></script>
+</body>
+
+</html>
